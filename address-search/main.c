@@ -6,14 +6,14 @@
 #define N 200
 struct address gRear = {"","","",NULL};
 int main(int argc,char *argv[]){
- int e,cnt = 0;
+    int e,cnt = 0;
     struct address *p;
     char str[N];
     char a[N];
-    if (argc != 2){ 
+    if(argc != 2){ 
         fprintf(stderr, "プログラム引数を1つ指定してください\n");
         exit(1);
-         } 
+    }
     infile_open(argv[1]);
     infile_scanf("%s",str);
     e = atoi(str);
@@ -25,20 +25,20 @@ int main(int argc,char *argv[]){
         insert(&gRear,p);
         p = p ->next;
         e--;
-     }
+    }
     while(strcmp(a,"0") != 0){
         p = gRear.next;
         cnt = 0;
         while(p != NULL){
         if(strcmp(a,p->aa) == 0){
-        cnt++;
-        printList(p);
+            cnt++;
+            printList(p);
         }
         p = p ->next;
-        }
-        printf("%d件見つかりました\n",cnt);
-        printf("検索文字列を入力して下さい: ");
-        scanf("%s",a);
+    }
+    printf("%d件見つかりました\n",cnt);
+    printf("検索文字列を入力して下さい: ");
+    scanf("%s",a);
     }
     printf("プログラムを終了します\n");
     fre(p);
