@@ -1,8 +1,6 @@
 # address-search
 "address-search" is a find program by using postal code.
 
-# Features
- "address-search" used split compilation only
 # Requirement
  
 * gcc (GCC) 9.1.0
