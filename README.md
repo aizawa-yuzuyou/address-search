@@ -39,4 +39,4 @@ I don't test environments under Linux and Mac.
  
 # Author
  
-* aizawa-yuzuyou
+* ozawa
